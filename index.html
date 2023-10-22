@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <h1>E-Commerce</h1>
+        <input type="text" placeholder="Lutfen urun giriniz">
+
+        <div>
+            <button id="basket">Sepet</button>
+            <button>Kayit Ol</button>
+            <button>Giris</button>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- Kategoriler -->
+        <section class="category-sec">
+            <h1>Kategoriler</h1>
+            <div class="categories"></div>
+        </section>
+        <!-- Urunler -->
+        <section>
+            <h1>Urunler</h1>
+            <div class="products"></div>
+        </section>
+    </main>
+
+    <!-- Sepet Penceresi -->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <div id="icon">
+                <img id="close" src="/images/e-close.png" alt="">
+            </div>
+            <div id="list"></div>
+            <p id="total">
+            <span id="count">0 urun</span> Toplam:
+            <span id="total-price">0</span> &#8378;
+            </p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
